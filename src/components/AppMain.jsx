@@ -42,7 +42,7 @@ export default function AppMain() {
         let value = saved + event.target.value;
         let size = 0
         for(let i = 0; i < value.length; i++){
-            if(value[i] === text[i]){
+            if(value[i] === text[i] || (text[i] === '\'' && (value[i] === '‘' || value[i] === '’'))){
                 size++;
             }else{
                 break;
