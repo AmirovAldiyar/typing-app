@@ -1,5 +1,5 @@
 import { useColorModeValue } from '@chakra-ui/react'
-import { Box, Center, Text } from '@chakra-ui/layout'
+import { Box, Text } from '@chakra-ui/layout'
 import React from 'react'
 
 export default function AppText({text, fontSize, backgroundColor, highlightBegin=0, highlightEnd=0, highlightColor}) {
