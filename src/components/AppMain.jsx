@@ -7,6 +7,7 @@ import AppStats from './AppStats'
 import AppResultModal from './AppResultModal'
 import Cookies from 'universal-cookie'
 
+
 const requestMode ={
     method: 'GET', // *GET, POST, PUT, DELETE, etc.
     mode: 'cors', // no-cors, *cors, same-origin
@@ -89,8 +90,8 @@ export default function AppMain() {
         <>
         <AppResultModal wpm = {lastWPM} onClose = {onClose} isOpen={isOpen}/>
         <SimpleGrid columns={1} width='50%' height='30vh' spacing='0px' >
-            <Text position='absolute' fontSize='3vh' left='2vw' top = '2vh' visibility={prev === '' ? 'hidden' : 'visible'}>Previous: {prev} WPM</Text>
-            <Text position='absolute' fontSize='3vh' left='2vw' top = '7vh' visibility={best === '' ? 'hidden' : 'visible'}>Best: {best} WPM</Text>
+            <Text position='absolute' fontSize='3vh' left='2vw' bottom = '2vh' visibility={prev === '' ? 'hidden' : 'visible'}>Previous: {prev} WPM</Text>
+            <Text position='absolute' fontSize='3vh' left='2vw' bottom = '7vh' visibility={best === '' ? 'hidden' : 'visible'}>Best: {best} WPM</Text>
             <Spinner
                 thickness="4px"
                 speed="0.65s"
