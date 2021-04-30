@@ -8,7 +8,8 @@ import AppColorModeButton from './components/AppColorModeButton';
 
 function App() {
   return (
-    <ChakraProvider><AppColorModeButton/>
+    <ChakraProvider>
+      <AppColorModeButton/>
       <Center display='flex' w='100%' height='100vh'>
         <AppMain/>
       </Center>
